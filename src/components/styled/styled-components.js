@@ -39,15 +39,15 @@ let Title = styled.div`
     }}vw;
 
     transform: rotate(-${props => {
-        console.log(props.sizeX)
-        return 7
+        console.log(props.sizeX/ 100)
+        return 5
     }}deg);
     position: absolute;
     top: ${props => {
         let size = props.sizeY / props.length
         let top = (props.yScroll / size)
         return  -20 + (top * 12)
-    }}vh;
+    }}%;
     z-index: 15;
     left: -${props => {
         let size = props.sizeY / props.length
