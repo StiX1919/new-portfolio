@@ -16,12 +16,6 @@ function App() {
     return acc;
   }, []);
 
-
-  useEffect(() => {
-    scrollHeight = scrollWin.current ? scrollWin.current.clientHeight : 0
-    scrollWidth = scrollWin.current ? scrollWin.current.clientWidth : 0
-  }, [])
-
   //functions
   const handleClick = id =>{
     console.log(refs[id].current.clientHeight, refs[id].current.offsetTop)
